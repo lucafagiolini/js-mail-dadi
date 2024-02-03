@@ -22,11 +22,11 @@ function runGame() {
     let winner = document.getElementById("winner");
 
     if (playerDice > computerDice) {
-        winner.innerHTML = "Player Wins!";
+        winner.innerHTML = "you win!";
         console.log("Player Wins!");
     }
     else if (playerDice < computerDice) {
-        winner.innerHTML = "Computer Wins!";
+        winner.innerHTML = "you lose";
         console.log("Computer Wins!");
     }
 
@@ -41,7 +41,7 @@ function runGame() {
 
 
     // PLAYER DICE 
-    if (playerDice && computerDice === 1) {
+    if (playerDice === 1) {
         document.querySelector("#player-dice i").classList.add("fas", "fa-dice-one");
     }
     else if (playerDice === 2) {
@@ -80,10 +80,6 @@ function runGame() {
     else if (computerDice === 6) {
         document.querySelector("#computer-dice i").classList.add("fas", "fa-dice-six")
     }
-
-
-
-
 }
 
 

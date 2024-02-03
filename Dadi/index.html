@@ -27,20 +27,21 @@
 
 <body data-bs-theme="dark">
     <main>
-        <div>
-            <input class="btn btn-primary" type="button" value="PLAY">
+        <div class="d-flex justify-content-center my-5 ">
+            <input id="play-button" class="btn btn-primary" type="button" value="PLAY">
         </div>
 
         <div class="container d-flex justify-content-center">
-            <div id="table" class=" border-5 ">
-                <div id="player-dice">
-                    <i class="fs-1"></i>
+            <div id="table" class=" border-5 rounded-4 d-flex justify-content-between align-items-center">
+
+                <div class="text-white" id="player-dice">
+                    <i class="dice-style fs-1"></i>
 
                 </div>
                 <div id="winner">
 
                 </div>
-                <div id="computer-dice">
+                <div class="text-white" id="computer-dice">
                     <i class="fs-1"></i>
 
                 </div>

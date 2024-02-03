@@ -24,15 +24,24 @@ function runGame() {
     if (playerDice > computerDice) {
         winner.innerHTML = "you win!";
         console.log("Player Wins!");
+        document.querySelector("#winner").classList.remove("tie")
+        document.querySelector("#winner").classList.remove("lose")
+        document.querySelector("#winner").classList.add("winner");
     }
     else if (playerDice < computerDice) {
         winner.innerHTML = "you lose";
         console.log("Computer Wins!");
+        document.querySelector("#winner").classList.remove("tie")
+        document.querySelector("#winner").classList.remove("winner");
+        document.querySelector("#winner").classList.add("lose");
     }
 
     else {
         winner.innerHTML = "Draw!";
         console.log("Draw!");
+        document.querySelector("#winner").classList.remove("lose")
+        document.querySelector("#winner").classList.remove("winner");
+        document.querySelector("#winner").classList.add("tie");
     }
 
     // clean dice
@@ -81,6 +90,8 @@ function runGame() {
         document.querySelector("#computer-dice i").classList.add("fas", "fa-dice-six")
     }
 }
+
+
 
 
 

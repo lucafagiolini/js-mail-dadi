@@ -15,3 +15,15 @@
 #robot {
     font-size: 100px;
 }
+
+.winner {
+    background-color: #1b3d04;
+}
+
+.lose {
+    background-color: #460507;
+}
+
+.tie {
+    background-color: #684416;
+}

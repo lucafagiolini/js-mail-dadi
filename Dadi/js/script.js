@@ -11,6 +11,9 @@ console.log(playerDice + " playerDice");
 let computerDice = Math.floor(Math.random() * 6) + 1;
 console.log(computerDice + " computerDice");
 
+
+
+
 // 2. Stabilire il vincitore, in base a chi fa il punteggio più alto.
 let winner = document.getElementById("winner");
 
@@ -22,3 +25,51 @@ else if (playerDice < computerDice) {
     winner.innerHTML = "Computer Wins!";
     console.log("Computer Wins!");
 }
+
+else {
+    winner.innerHTML = "Draw!";
+    console.log("Draw!");
+}
+
+
+// PLAYER DICE 
+if (playerDice && computerDice === 1) {
+    document.querySelector("#player-dice i").classList.add("fas", "fa-dice-one");
+}
+else if (playerDice === 2) {
+    document.querySelector("#player-dice i").classList.add("fas", "fa-dice-two");
+}
+else if (playerDice === 3) {
+    document.querySelector("#player-dice i").classList.add("fas", "fa-dice-three");
+}
+else if (playerDice === 4) {
+    document.querySelector("#player-dice i").classList.add("fas", "fa-dice-four")
+}
+else if (playerDice === 5) {
+    document.querySelector("#player-dice i").classList.add("fas", "fa-dice-five")
+}
+else if (playerDice === 6) {
+    document.querySelector("#player-dice i ").classList.add("fas", "fa-dice-six")
+}
+// PLAYER DICE 
+
+// COMPUTER DICE
+if (computerDice === 1) {
+    document.querySelector("#computer-dice i").classList.add("fas", "fa-dice-one");
+}
+else if (computerDice === 2) {
+    document.querySelector("#computer-dice i").classList.add("fas", "fa-dice-two");
+}
+else if (computerDice === 3) {
+    document.querySelector("#computer-dice i").classList.add("fas", "fa-dice-three");
+}
+else if (computerDice === 4) {
+    document.querySelector("#computer-dice i").classList.add("fas", "fa-dice-four")
+}
+else if (computerDice === 5) {
+    document.querySelector("#computer-dice i").classList.add("fas", "fa-dice-five")
+}
+else if (computerDice === 6) {
+    document.querySelector("#computer-dice i").classList.add("fas", "fa-dice-six")
+}
+

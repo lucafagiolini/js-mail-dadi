@@ -27,17 +27,23 @@
 
 <body data-bs-theme="dark">
     <main>
-        <div class="container">
-            <form action="">
-                <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                        placeholder="example: mariorossi@gmail.com">
-                    <div id="emailHelp" class="form-text">Insert your registered email here to verify your identity
+        <div class="container my-5 ">
+            <div id="form" class="d-flex justify-content-center align-items-center">
+                <div action="">
+                    <div class="mb-3 al">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="email-input" aria-describedby="emailHelp"
+                            placeholder="example: mariorossi@gmail.com">
+                        <div id="emailHelp" class="form-text">Insert your registered email here to verify your identity
+                        </div>
                     </div>
+                    <input id="submit-btn" class="btn btn-primary" type="submit" value="Submit">
                 </div>
-                <input id="submit-btn" class="btn btn-primary" type="submit" value="Submit">
-            </form>
+            </div>
+            <div id="result-box"
+                class="d-none d-flex justify-content-center align-items-center py-5 border-5 rounded-4 ">
+                <h1 id="result" class="text-uppercase">accesso granted</h1>
+            </div>
 
         </div>
     </main>
